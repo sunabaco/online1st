@@ -1,0 +1,32 @@
+* {
+    font-family: sans-serif;
+}
+
+.eyecatch {
+    height: 200px;
+}
+
+.aftenoon {
+    background-color: lightgoldenrodyellow;
+    color: darkgoldenrod;
+    margin: 10px;
+    padding: 10px;
+}
+
+.evening {
+    background-color: lightcyan;
+    color: darkblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+.link {
+    background-color: papayawhip;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+
+}
