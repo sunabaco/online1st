@@ -20,13 +20,24 @@
     padding: 10px;
 }
 
+.update {
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 10px;
+}
+
 .link {
     background-color: papayawhip;
     margin: 10px;
     padding: 10px;
 }
 
+.update {
+    margin: 10px;
+    padding: 10px;
+
+}
+
 .container {
     display: flex;
-
 }
