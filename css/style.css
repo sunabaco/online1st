@@ -12,17 +12,8 @@ body {
     background-color: #e6e6e6;
 }
 
-/* メディアクエリのメモ：ブレイクポイント変える場合は記述の全見直しお願いします(*- -)(*_ _) */
-        /* スマホ */
-        @media screen and (max-width: 481px) {}
-        /* タブレット、PC */
-        @media screen and (min-width: 480px) {}
-
-    /* パターン２ */
-        /* スマホ、タブレット */
-        @media screen and (max-width: 961px) {}
-        /* PC */
-        @media screen and (min-width: 960px) {}
+/* メモ：メディアクエリのブレイクポイント 
+    480, 640, 960あたり？ */
 
 
 /* ヘッダー */
@@ -69,131 +60,6 @@ nav {
 .sp-nav {
     display: none;
 }
-
-/* スマホ、タブレット */
-@media screen and (max-width: 960px) {
-    .pc-nav {
-        display: none;
-    }
-    #ham {
-        position: relative;
-        display: block;
-        width: 30px;
-        height: 25px;
-        margin: 0 0 0 auto;
-        padding-left: 30px;
-    }
-    #ham span {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: #000;
-        transform: translateY(-50%);
-    }
-    #ham::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #000;
-    }
-    #ham::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 70%;
-        height: 2px;
-        background-color: #000;
-    }
-
-    .sp-nav {
-        z-index: 1;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100vh;
-        display: block;
-        background: rgba(0,0,0,.8, green, blue, alpha);
-        transition: all .2s ease-in-out;
-        
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-
-    .sp-nav ul {
-        padding: 0;
-        display: flex;
-        flex-wrap: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    .sp-nav li {
-        margin: 0;
-        padding: 0;
-    }
-
-    .sp-nav li span {
-        font-size: 15px;
-        color: #fff;
-    }
-
-    .sp-nav li a, .sp-nav li span {
-        display: block;
-        padding: 20px 0;
-    }
-
-    .sp-nav .close {
-        position: relative;
-        padding-left: 20px;
-    }
-    .sp-nav .close::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        display: block;
-        width: 16px;
-        height: 1px;
-        background: #fff;
-        transform: rotate(45deg);
-    }
-    .sp-nav .close::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        display: block;
-        width: 16px;
-        height: 1px;
-        background: #fff;
-        transform: rotate(-45deg);
-    }
-
-    .toggle {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    .main-visual {
-        padding: 0 4%;
-    }
-
-    h2 {
-        line-height: 1.6;
-        text-align: center;
-    }
-}
-
-
 
 
 /* body */
@@ -262,7 +128,7 @@ h2 {
 }
 
 /* スマホ */
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 641px) {
     .item {
         box-sizing: border-box;
         border: 1px solid #cccccc;
@@ -279,7 +145,7 @@ h2 {
 }
 
 /* タブレット、PC */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 640px) {
     .item {
         box-sizing: border-box;
         border: 1px solid #cccccc;
@@ -360,20 +226,19 @@ h2 {
     top: 100px;
 }
 
-/* スマホ */
-@media screen and (max-width: 481px) {
-    .access {
-    }
-}
-
-/* タブレット、PC */
-@media screen and (min-width: 480px) {
-    .access {
-        display: flex;
-        justify-content: space-around;
+    /* スマホ */
+    @media screen and (max-width: 641px) {
+        .access {
+        }
     }
 
-}
+    /* タブレット、PC */
+    @media screen and (min-width: 640px) {
+        .access {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
 
 .access .button {
     display: inline-block;
@@ -403,6 +268,24 @@ h2 {
 
     padding: 5%;
 }
+
+/* 動画のサイズレスポンシブ、作りかけ！！ */
+/* .yt {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.yt iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    max-height: 270px;
+} */
 
 
 
