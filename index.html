@@ -1,197 +1,249 @@
-<!-- SUNABACOおんらいん1stのみなさまへ：自由に足したり変えたりしていってください！！ -->
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>SUNABACOおんらいん1st Webサービス集</title>
+    <title>Document</title>
 </head>
-
 <body>
-    <h1>SUNABACOおんらいん1st受講生 卒業制作サービス集</h1>
-    <p>プログラミングスクール「SUNABACO」のオンラインクラス卒業制作Webサービス集です。<br>
-        卒業制作のアイキャッチやデプロイしたサービスなど自由に足していってください。 <br>
-        このサイトのレイアウト変更や機能追加なども大歓迎です！</p>
 
-    
-    <div class="container">
+    <header>
+        <h1>
+            <a href="/">SUNABACOオンラインクラス<br>卒業制作サービス集</a>
+        </h1>
 
-        <div class="aftenoon item">
-            <h2>昼チーム（4サービス）</h2>
-            <img src="./img/オンライン1st_昼.png" alt="昼アイキャッチ" class="eyecatch">
-            
+        <nav class="pc-nav">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">サービス一覧</a></li>
+                <li><a href="#">参加・登録方法</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="body">
+
+        <!-- アイキャッチ用のスペース -->
+        <div class="main-visual">
+            <img src="./img/オンライン1st_昼.png" alt="">
+            <img src="./img/オンライン1st_夜1.png" alt="">
+            <img src="./img/オンライン1st_夜2.png" alt="">
+
+        </div>
+
+        <!-- about -->
+        <div class="about">
             <div>
-                <h4>みのりの</h4>
-                <img src="./img/minorino.herokuapp.com_.png" alt="みのりのアイキャッチ" class="screenshot"/>
-                <p><a href="https://minorino.herokuapp.com/">https://minorino.herokuapp.com/</a></p>               
+                <h2>About</h2>
             </div>
-    
+
             <div>
-                <h4>cookgate</h4>
-                <img src="./img/cook-gate.herokuapp.com_index.png" alt="cookgateアイキャッチ" class="screenshot"/>               
-                <p><a href="https://cook-gate.herokuapp.com/">https://cook-gate.herokuapp.com/</a></p>
-                <iframe
-                    width="240" height="135" src="https://www.youtube.com/embed/u6KWwfBUttA?start=721" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-    
-            <div>
-                <h4>むだろぐ</h4>
-            </div>
-    
-            <div>
-                <h4>PicPlace</h4>
+                <p>このサイトは、プログラミングスクール「SUNABACO」オンラインクラスの卒業制作で、
+                    世の中のお困りごとを解決するために生み出されたサービスをまとめています。
+                </p>
             </div>
 
         </div>
 
-        <div class="evening item">
+        <!-- service -->
+        <div class="service">
+            <div>
+                <h2>サービス一覧</h2>
+            </div>
 
-            <h2>夜チーム（16サービス）</h2>
-            <img src="./img/オンライン1st_夜1.png" alt="夜1アイキャッチ" class="eyecatch">
-            <img src="./img/オンライン1st_夜2.png" alt="夜2アイキャッチ" class="eyecatch">
+            <!-- 目次
+            <div class="contents">
+                <h3><a href="#aftenoon">昼コース</a></h3>
+                <h3><a href="#evening">夜コース</a></h3>
+            </div> -->
 
             <div>
-                <div>
-                    <h4>おかしでさんすう</h4>
-                    <img src="./img/gachaofsweets.herokuapp.com_.png" alt="おかしでさんすうスクリーンショット" class="screenshot"/>
-                    <p><a href="https://gachaofsweets.herokuapp.com/">https://gachaofsweets.herokuapp.com/</a></p>
+                <!-- <h3 id="aftenoon">昼コース</h3> -->
+                <!-- <h3 id="evening">夜コース</h3> -->
+
+                <div class="items">
+
+                    <div class="item">
+                        <h4>みのりの</h4>
+                        <img src="./img/minorino.herokuapp.com_.png" alt="みのりのアイキャッチ" class="screenshot"/>
+                        <p>使ってみてね！</p>
+                        <p><a href="https://minorino.herokuapp.com/" target="_blank">みのりの</a></p>               
+                    </div>
+
+                    <div class="item">
+                        <h4>cookgate</h4>
+                        <img src="./img/cook-gate.herokuapp.com_index.png" alt="cookgateアイキャッチ" class="screenshot"/>               
+                        <p>使ってみてね！</p>
+                        <p><a href="https://cook-gate.herokuapp.com/" target="_blank">cookgate</a></p>
+                    </div>
+
+                    <div class="item">
+                        <h4>おかしでさんすう</h4>
+                        <img src="./img/gachaofsweets.herokuapp.com_.png" alt="おかしでさんすうスクリーンショット" class="screenshot"/>
+                        <p>使ってみてね！</p>
+                        <a href="https://gachaofsweets.herokuapp.com/" target="_blank">おかしでさんすう</a>
+                    </div>
+
+                    <div class="item">
+                        <h4>Emson ~「きもち」をあらわそう~</h4>
+                        <img class="screenshot" src="./img/nophoto.png" alt="アイキャッチ">
+                        <p>使ってみてね！</p>
+                        <p><a href="https://emsontatsu.herokuapp.com/" target="_blank">Emson</a></p>
+                    </div>
+
+                    <div class="item">
+                        <h4>会話デッキ<br>　</h4> <!-- ← 高さ揃えできなくてやっつけすみません -->
+                        <img src="./img/online1st-kaiwadeck.herokuapp.com_mypage.png" alt="会話デッキスクリーンショット" class="screenshot"/>
+                        <p><a href="https://online1st-kaiwadeck.herokuapp.com" target="_blank">会話デッキ</a></p>
+                        <p style="font-size: 12px;">（今は、ユーザー名:testuser、パスワード:testpass でログインしてね）</p>
+                    </div>
+
+                    <div class="item">
+                        <h4>HOUKAGO no KAMAKURA</h4>
+                        <img src="./img/omochichat.herokuapp.com_.png" alt="HOUKAGO no KAMAKURAスクリーンショット" class="screenshot"/>
+                        <p>使ってみてね！</p>
+                        <p><a href="https://omochichat.herokuapp.com/" target="_blank">HOUKAGO no KAMAKURA</a></p>
+                    </div>
+
+                    <div class="item">
+                        <h4>今日なにする？</h4>
+                        <img src="./img/gachawhattodo.herokuapp.com_.png" alt="今日何する？スクリーンショット" class="screenshot"/>
+                        <p>使ってみてね！</p>
+                        <p><a href="https://gachawhattodo.herokuapp.com/" target="_blank">今日なにする？</a></p>
+                    </div>
+
+                    <div class="item">
+                        <h4>みんたび</h4>
+                        <img src="./img/mintabi3.herokuapp.com_.png" alt="みんたびスクリーンショット" class="screenshot"/>
+                        <p>使ってみてね！</p>
+                        <p><a href="https://mintabi3.herokuapp.com/" target="_blank">みんたび</a></p>
+                    </div>
+
+                    <div class="item">
+                        <h4>ぴ・ぽ・ぱ</h4>
+                        <img src="./img/pi-po-pa.herokuapp.com_.jpg" alt="ぴ・ぽ・ぱサイトイメージ" class="screenshot">
+                        <p><a href="https://pi-po-pa.herokuapp.com/" target="_blank">ぴ・ぽ・ぱ（社員）</a></p>
+                        <p style="font-size: 12px;">（各社員のページは、社員名:比嘉ひろし、パスワード:hiroshiでログインしてください）</p>
+                        <p><a href="https://pi-po-pa.herokuapp.com/login_master" target="_blank">ぴ・ぽ・ぱ（経理）</a></p>
+                        <p style="font-size: 12px;">（経理のページは、/login_masterから経理担当名:経理担当者、パスワード:masterでログインしてください）</p>
+                    </div>
+
+                    <div class="item">
+                        <h4>ポケット間取り</h4>
+                        <img src="./img/pocketmadori.herokuapp.com_.jpg" alt="ポケット間取りスクリーンショット" class="screenshot"/>
+                        <p>使ってみてね！</p>
+                        <p><a href="https://pocketmadori.herokuapp.com/" target="_blank">ポケット間取り</a></p>
+                    </div>
+
+
+                    <!-- コピペ用 -->
+
+                    <!-- <div class="item">
+                        <h4>サービス名</h4>
+                        <img src="" alt="スクリーンショット" class="screenshot"/>
+                        <p>使ってみてね！</p>
+                        <p><a href="#" target="_blank">サービス名</a></p>
+                    </div> -->
+
+
+
                 </div>
-                <div>
-                    <h4>Emson ~「きもち」をあらわそう~</h4>
-                    <p><a href="https://emsontatsu.herokuapp.com/">https://emsontatsu.herokuapp.com/</a></p>
-                </div>    
-
-                <div>
-                    <h4>会話デッキ</h4>
-                    <img src="./img/online1st-kaiwadeck.herokuapp.com_mypage.png" alt="会話デッキスクリーンショット" class="screenshot"/>
-                    <p><a href="https://online1st-kaiwadeck.herokuapp.com">https://online1st-kaiwadeck.herokuapp.com</a></p>
-                    <p>（今は、ユーザー名:testuser、パスワード:testpass でログインしてね）</p>
-                </div>    
-
-                <div>
-                    <h4>HOUKAGO no KAMAKURA</h4>
-                    <img src="./img/omochichat.herokuapp.com_.png" alt="HOUKAGO no KAMAKURAスクリーンショット" class="screenshot"/>
-                    <p><a href="https://omochichat.herokuapp.com/">https://omochichat.herokuapp.com/</a></p>
-                </div>    
-                
-                <div>
-                    <h4>今日なにする？</h4>
-                    <img src="./img/gachawhattodo.herokuapp.com_.png" alt="今日何する？スクリーンショット" class="screenshot"/>
-                    <p><a href="https://gachawhattodo.herokuapp.com/">https://gachawhattodo.herokuapp.com/</a></p>
-                </div>    
-
-                 <div>
-                     <h4>みんたび</h4>
-                     <img src="./img/mintabi3.herokuapp.com_.png" alt="みんたびスクリーンショット" class="screenshot"/>
-                     <p><a href="https://mintabi3.herokuapp.com/">https://mintabi3.herokuapp.com/</a></p>
-                 </div>
-
-
-                 <div>
-                    <h4>ぴ・ぽ・ぱ</h4>
-                    <img src="./img/pi-po-pa.herokuapp.com_.jpg" alt="ぴ・ぽ・ぱサイトイメージ" class="screenshot">
-                    <p><a href="https://pi-po-pa.herokuapp.com/">https://pi-po-pa.herokuapp.com/</a></p>
-                    <p>（各社員のページは、社員名:比嘉ひろし、パスワード:hiroshiでログインしてください）</p>
-                    <p>（経理のページは、/login_masterから経理担当名:経理担当者、パスワード:masterでログインしてください）</p>
-                </div>  
-              
-                <div>
-                    <h4>ポケット間取り</h4>
-                    <img src="./img/pocketmadori.herokuapp.com_.jpg" alt="ポケット間取りスクリーンショット" class="screenshot"/>
-                    <p><a href="https://pocketmadori.herokuapp.com/">https://pocketmadori.herokuapp.com/</a></p>
-
-              
-                    <iframe width="240" height="135" src="https://www.youtube.com/embed/Nz951zxnn3Q?start=7320"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                  
-              </div>
-              
-                <!-- コピペ用 -->
-                <div>
-                    <h4></h4>
-                    <img src="" alt="" class="screenshot"/>
-                    <p><a href=""></a></p>
-
-
-                </div>                <!-- コピペ用ここまで -->
-
 
             </div>
+        </div>
+
+
+        <!-- 発表会動画 -->
+        <div class="movie">
+            <h2>サービス紹介</h2>
+            <p>卒業制作発表会@YouTube</p>
+
+            <iframe width="240" height="135" src="https://www.youtube.com/embed/u6KWwfBUttA?start=721" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+            <iframe width="240" height="135" src="https://www.youtube.com/embed/Nz951zxnn3Q?start=7320"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
         </div>
         
-    </div>
 
-    <div class="update">
-
-        <div>
-            <h4>卒業制作したサービスの載せ方（おんらいん生向け）</h4>
-            <p>お願い・・・GitとGlideは未連携なので、それぞれに載せてもらえたら嬉しいです！！</p>
+        <!-- 参加方法 -->
+        <!-- （名前、登録方法とか追加方法とかのほうがいのかな…？） -->
+        <div class="howtoadd">
+            <div>
+                <h2>参加・登録方法</h2>
+                <h4>全ての皆様へ</h4>
+                <p>サイト設計やデザイン、機能追加など、あらゆる改善への提案を歓迎いたします。<br>
+                    開発ポリシーは、GitHubのReadmeに記載していますが、これに捕らわれない提案・議論を歓迎いたします。
+                    Git練習などにもお気軽にお使いください。
+                </p>
+                <h4>おんらいん卒業生の皆様へ</h4>
+                <p>デプロイした卒業制作の登録をお願いいたします。<br>
+                    GitとGlideは未連携なので、それぞれに載せてもらえると嬉しいです！<br>
+                </p>
+            </div>
         </div>
 
-        <div class="container">
+        <!-- 登録先 -->
+        <div class="howtoaccess">
+            <h2>登録先</h2>
 
-            <div class="update">
-                <h4>１．このページに載せる<br>GitHubで更新！<br>（Fork＆push！）</h4>
-                <p><a href="https://github.com/suminabe/online1st">GitHub</a></p>
+            <div class="access">
+
+                <div>
+                    <h4>1. おんらいん1st Git
+                        <br><a href="https://github.com/suminabe/online1st" target="_blank">github</a><br>
+                    </h4>
+                    <img src="./img/github.jpg" alt="GitHub" height="150px">
+                </div>  
+
+                <div>
+                    <h4>2. みんなの卒箱
+                        <br><a href="https://8msfb.glideapp.io/" target="_blank">glideapp</a><br>
+                    </h4>
+                    <img src="./img/8msfb.jpg" alt="みんなの卒箱" height="150px">
+                </div>
+
             </div>
-
-            <div class="update">
-                <img src="./img/github.jpg" alt="GitHub" height="150px">
-            </div>
+        </div>
 
 
-            <div class="update">
-                <h4>２．「みんなの卒箱」に載せる<br>Glideでも共有・公開中！</h4>
-                <p><a href="https://8msfb.glideapp.io/">みんなの卒箱</a></p>    
-            </div>
+        <!-- リンク集 -->
+        <div class="link">
+            <h2>Link</h2>
+        
+            <ul>
+                <li><a href="https://sunabaco.com/" target="_blank">SUNABACO</a></li>
+                <li><a href="https://prog-8.com/" target="_blank">progate</a></li>
+                <li><a href="https://jp.heroku.com/" target="_blank">Heroku</a></li>
+                <li><a href="https://qiita.com/sota_mikami/items/c6038cf13fd84b519a61" target="_blank">GitHubでWebページ公開</a></li>
 
-            <div class="update">
-                <img src="./img/8msfb.jpg" alt="みんなの卒箱" height="150px">
-            </div>
-
+            </ul>
 
         </div>
 
     </div>
 
 
-    <div class="link">
-        <h4>リンク集</h4>
-        <ul>
-            <li><p><a href="https://sunabaco.com/">SUNABACO</a></p></li>
-            <li><p><a href="https://prog-8.com/">progate</a></p></li>
-            <li><p><a href="https://jp.heroku.com/">Heroku</a></p></li>
-        </ul>
-    </div>
+<footer>
+    <h1>
+        <a href="#">SUNABACOオンラインクラス 卒業制作サービス集</a>
+    </h1>
 
-    <div>
-        <h4>このサイトを作った経緯：</h4>
-        <p>みんなが卒業制作で発表したサービスを使ってみようとしたら、ツイートから拾うのが大変だったので<br>
-            一か所で見られるようにまとめを作ろうとしました。<br>
-            まだ集めきれていませんが、サイト制作の練習を兼ねて自由に使っていただけたらと思いソースごと公開しました！
-        </p>
-    </div>
 
-    <div>
-        <h4>参考</h4>
-        <ul>
-            <li><a href="https://qiita.com/sota_mikami/items/c6038cf13fd84b519a61">GitHubでWebページ公開（Qiita）</a></li>
-        </ul>
-    </div>
+</footer>
 
 </body>
 </html>
 
-
-<!-- =================================
+<!-- 
 ライセンス表示
-Copyright (c) 2020 suminabe
-Released under the MIT license
-https://github.com/suminabe/online1st/blob/master/LICENSE
-================================= -->
+copylight 2020- suminabe
+MIT license
+https://github.com/suminabe/online1st/blob/master/LICENSE 
+ -->
