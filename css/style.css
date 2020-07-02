@@ -118,6 +118,9 @@ nav {
         display: block;
         background: rgba(0,0,0,.8, green, blue, alpha);
         transition: all .2s ease-in-out;
+        
+        opacity: 0;
+        transform: translateY(-100%);
     }
 
     .sp-nav ul {
@@ -169,6 +172,20 @@ nav {
         height: 1px;
         background: #fff;
         transform: rotate(-45deg);
+    }
+
+    .toggle {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .main-visual {
+        padding: 0 4%;
+    }
+
+    h2 {
+        line-height: 1.6;
+        text-align: center;
     }
 }
 
