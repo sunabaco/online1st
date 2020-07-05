@@ -1,57 +1,344 @@
+/* 参考：https://rico-notes.com/programming/html/header-design/ */
+
+/* りせっとCSS */
 * {
-    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
-.eyecatch {
-    height: 200px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #e6e6e6;
 }
+
+/* メモ：メディアクエリのブレイクポイント 
+    480, 640, 960あたり？ */
+
+
+/* ヘッダー */
+header {
+    width: 100%;
+    height: 100px;
+    padding: 20px 4% 15px ; /* 高さ100px */
+    background-color: #fff;
+    /* 位置指定 */
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    /* flexbox */
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+header li {
+    margin: 0 0 0 15px;
+    font-size: 14px;
+}
+
+nav {
+    margin: 0 0 0 auto;
+}
+
+.sp-nav {
+    display: none;
+}
+
+
+/* body */
+.body {
+    padding: 0 5% 0 5%;
+}
+
+/* アイキャッチ */
+.main-visual {
+    /* 確認用 */
+    background-color: black;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+
+.main-visual img {
+    width: 33%;
+    
+}
+
+h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal;
+    color: #4f4f4f;
+}
+
+/* About */
+.about {
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    top: 100px;
+
+    padding: 2% 6%;
+}
+
+/* service */
+.service {
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    top: 100px;
+
+    padding: 2% 6%;
+}
+/* 
+.contents {
+    display: flex;
+    justify-content: center;
+}
+.contents h3 {
+    width: 50%;
+} */
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+/* スマホ */
+@media screen and (max-width: 641px) {
+    .item {
+        box-sizing: border-box;
+        border: 1px solid #cccccc;
+        margin: 0 8px 8px 0;
+        padding: 0;
+        width: calc(90% - 8px);
+        width: calc(90% - 16px);
+        align-self: stretch;
+    }
+
+    .item:nth-child(1n) {
+        margin-right: 0;
+    }
+}
+
+/* タブレット、PC */
+@media screen and (min-width: 640px) {
+    .item {
+        box-sizing: border-box;
+        border: 1px solid #cccccc;
+        margin: 0 20px 20px 0;
+        padding: 0;
+        width: calc(33% - 20px);
+        width: calc(33% - 40px / 3);
+        align-self: stretch;
+    }
+
+    .item:nth-child(3n) {
+        margin-right: 0;
+    }
+
+}
+
+
+.item img {
+    width: 100%;
+    height: 200px;
+
+    /* このCSS、IEとEdge対応してないらしい。対策まだしてない。 */
+    object-fit: contain;
+}
+
+.item a {
+    color: #fff;
+    font-weight: 500;
+}
+
+.item .button {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #1aa81a;
+    border: solid 2px #1aa81a;
+    border-radius: 8px;
+    transition: .4s;
+}
+
+.item .button:hover {
+    background: #1aa81a;
+    color: white;
+}
+
 
 .screenshot {
-    width: 200px;
-}
-
-
-.aftenoon {
-    background-color: lightgoldenrodyellow;
-    color: darkgoldenrod;
-    margin: 10px;
-    padding: 10px;
-}
-
-.evening {
-    background-color: lightcyan;
-    color: darkblue;
-    margin: 10px;
-    padding: 10px;
-}
-
-.update {
-    background-color: whitesmoke;
-    margin: 10px;
-    padding: 10px;
-}
-
-.link {
-    background-color: papayawhip;
-    margin: 10px;
-    padding: 10px;
-}
-
-.update {
-    margin: 10px;
-    padding: 10px;
+    display: inline-block;
+    width: 100%;
 
 }
 
-.container {
+
+
+/* 登録方法 */
+.howtoadd {
+    background-color:white;
+
+    text-align: center;
+    position: relative;
+    top: 100px;
+
+    padding: 5% 6%;
+}
+
+.howtoadd-item {
     display: flex;
 }
 
 
 
+/* 登録先 */
+.howtoaccess {
+    background-color:white;
+
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+    /* スマホ */
+    @media screen and (max-width: 641px) {
+        .access {
+        }
+    }
+
+    /* タブレット、PC */
+    @media screen and (min-width: 640px) {
+        .access {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+.access .button {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 8px;
+    transition: .4s;
+}
+
+.access .button:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+
+
+
+/* 動画 */
+.movie {
+    background-color:white;
+
+    text-align: center;
+    position: relative;
+    top: 100px;
+
+    padding: 5%;
+}
+
+/* 動画のサイズレスポンシブ、作りかけ！！ */
+/* .yt {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.yt iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    max-height: 270px;
+} */
+
+
+
+
+/* リンク集 */
+.link {
+    background-color:white;
+
+    text-align: center;
+    position: relative;
+    top: 100px;
+
+    padding: 5%;
+}
+
+.link ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    padding: 1%;
+}
+
+.link li {
+    text-align: left;
+    margin: 0 0 0 15px;
+    font-size: 14px;
+}
+
+
+/* フッター */
+footer {
+    width: 100%;
+    padding: 10px 4% 10px ;
+    background-color: #fff;
+    /* 位置指定 */
+    position: relative;
+    top: 100px;
+    /* flexbox */
+    display: flex;
+    align-items: center;
+}
+
+footer h1 {
+    font-size: 12px;
+}
+
+
+
+
+
 /* =================================
 ライセンス表示
-Copyright (c) 2020 suminabe
+Copyright 2020 suminabe
 Released under the MIT license
 https://github.com/suminabe/online1st/blob/master/LICENSE 
 ================================= */
