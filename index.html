@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/common.js"></script>
     <title>お役立ちウェブサービス集</title>
 
 </head>
+
 <body>
 
     <!-- 
@@ -15,19 +19,36 @@
     サービスの構想からデプロイ・アップデートも出来るんですね！
     -->
 
-    
+
     <header>
         <h1>
             <a href="/">SUNABACOオンラインクラス卒業制作サービス集</a>
         </h1>
 
-        <nav class="pc-nav">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">サービス一覧</a></li>
-                <li><a href="#">参加・登録方法</a></li>
-                <li><a href="#">Link</a></li>
+        <nav>
+            <ul class="pc-nav">
+                <li><a href="#About_anchor">About</a></li>
+                <li><a href="#service_anchor">サービス一覧</a></li>
+                <li><a href="#movie_anchor">Movie</a></li>
+                <li><a href="#howtoadd_anchor">参加・登録方法</a></li>
+                <li><a href="#link_anchor">Link</a></li>
             </ul>
+            <div class="ham-menu">
+                <div id="nav-drawer">
+                    <input id="nav-input" type="checkbox" class="nav-unshown">
+                    <label id="nav-open" for="nav-input"><span></span></label>
+                    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                    <div id="nav-content">
+                        <ul class="ham-nav-list">
+                            <li><a href="#About_anchor">About</a></li>
+                            <li><a href="#service_anchor">サービス一覧</a></li>
+                            <li><a href="#movie_anchor">Movie</a></li>
+                            <li><a href="#howtoadd_anchor">参加・登録方法</a></li>
+                            <li><a href="#link_anchor">Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <div id="ham">
@@ -49,6 +70,7 @@
 
         <!-- about -->
         <div class="about">
+            <a id="About_anchor" class="anchor"></a>
             <div>
                 <h2>About</h2>
             </div>
@@ -64,6 +86,7 @@
 
         <!-- service -->
         <div class="service">
+            <a id="service_anchor" class="anchor"></a>
             <div>
                 <h2>サービス一覧</h2>
             </div>
@@ -77,27 +100,27 @@
             <div>
                 <!-- <h3 id="aftenoon">昼コース</h3> -->
                 <!-- <h3 id="evening">夜コース</h3> -->
-                
-                
+
+
                 <div class="items">
 
                     <div class="item">
                         <h4>みのりの</h4>
-                        <img src="./img/minorino.herokuapp.com_.png" alt="みのりのアイキャッチ" class="screenshot"/>
+                        <img src="./img/minorino.herokuapp.com_.png" alt="みのりのアイキャッチ" class="screenshot" />
                         <p>使ってみてね！</p>
-                        <p><a class="button" href="https://minorino.herokuapp.com/" target="_blank">使ってみる</a></p>               
+                        <p><a class="button" href="https://minorino.herokuapp.com/" target="_blank">使ってみる</a></p>
                     </div>
 
                     <div class="item">
                         <h4>cookgate</h4>
-                        <img src="./img/cook-gate.herokuapp.com_index.png" alt="cookgateアイキャッチ" class="screenshot"/>               
+                        <img src="./img/cook-gate.herokuapp.com_index.png" alt="cookgateアイキャッチ" class="screenshot" />
                         <p>使ってみてね！</p>
                         <p><a class="button" href="https://cook-gate.herokuapp.com/" target="_blank">使ってみる</a></p>
                     </div>
 
                     <div class="item">
                         <h4>おかしでさんすう</h4>
-                        <img src="./img/gachaofsweets.herokuapp.com_.png" alt="おかしでさんすうスクリーンショット" class="screenshot"/>
+                        <img src="./img/gachaofsweets.herokuapp.com_.png" alt="おかしでさんすうスクリーンショット" class="screenshot" />
                         <p>使ってみてね！</p>
                         <p><a class="button" href="https://gachaofsweets.herokuapp.com/" target="_blank">使ってみる</a></p>
                     </div>
@@ -111,29 +134,32 @@
 
                     <div class="item">
                         <h4>会話デッキ</h4>
-                        <img src="./img/online1st-kaiwadeck.herokuapp.com_mypage.png" alt="会話デッキスクリーンショット" class="screenshot"/>
+                        <img src="./img/online1st-kaiwadeck.herokuapp.com_mypage.png" alt="会話デッキスクリーンショット"
+                            class="screenshot" />
                         <p>使ってみてね！</p>
-                        <p><a class="button" href="https://online1st-kaiwadeck.herokuapp.com" target="_blank">使ってみる</a></p>
+                        <p><a class="button" href="https://online1st-kaiwadeck.herokuapp.com" target="_blank">使ってみる</a>
+                        </p>
                         <p style="font-size: 12px;">（今は、ユーザー名:testuser、パスワード:testpass でログインしてね）</p>
                     </div>
 
                     <div class="item">
                         <h4>HOUKAGO no KAMAKURA</h4>
-                        <img src="./img/omochichat.herokuapp.com_.png" alt="HOUKAGO no KAMAKURAスクリーンショット" class="screenshot"/>
+                        <img src="./img/omochichat.herokuapp.com_.png" alt="HOUKAGO no KAMAKURAスクリーンショット"
+                            class="screenshot" />
                         <p>使ってみてね！</p>
                         <p><a class="button" href="https://omochichat.herokuapp.com/" target="_blank">使ってみる</a></p>
                     </div>
 
                     <div class="item">
                         <h4>今日なにする？</h4>
-                        <img src="./img/gachawhattodo.herokuapp.com_.png" alt="今日何する？スクリーンショット" class="screenshot"/>
+                        <img src="./img/gachawhattodo.herokuapp.com_.png" alt="今日何する？スクリーンショット" class="screenshot" />
                         <p>使ってみてね！</p>
                         <p><a class="button" href="https://gachawhattodo.herokuapp.com/" target="_blank">使ってみる</a></p>
                     </div>
 
                     <div class="item">
                         <h4>みんたび</h4>
-                        <img src="./img/mintabi3.herokuapp.com_.png" alt="みんたびスクリーンショット" class="screenshot"/>
+                        <img src="./img/mintabi3.herokuapp.com_.png" alt="みんたびスクリーンショット" class="screenshot" />
                         <p>使ってみてね！</p>
                         <p><a class="button" href="https://mintabi3.herokuapp.com/" target="_blank">使ってみる</a></p>
                     </div>
@@ -144,13 +170,14 @@
                         <p>使ってみてね！</p>
                         <p><a class="button" href="https://pi-po-pa.herokuapp.com/" target="_blank">使ってみる（社員）</a></p>
                         <p style="font-size: 12px;">（各社員のページは、社員名:比嘉ひろし、パスワード:hiroshiでログインしてください）</p>
-                        <p><a class="button" href="https://pi-po-pa.herokuapp.com/login_master" target="_blank">使ってみる（経理）</a></p>
+                        <p><a class="button" href="https://pi-po-pa.herokuapp.com/login_master"
+                                target="_blank">使ってみる（経理）</a></p>
                         <p style="font-size: 12px;">（経理のページは、/login_masterから経理担当名:経理担当者、パスワード:masterでログインしてください）</p>
                     </div>
 
                     <div class="item">
                         <h4>ポケット間取り</h4>
-                        <img src="./img/pocketmadori.herokuapp.com_.jpg" alt="ポケット間取りスクリーンショット" class="screenshot"/>
+                        <img src="./img/pocketmadori.herokuapp.com_.jpg" alt="ポケット間取りスクリーンショット" class="screenshot" />
                         <p>使ってみてね！</p>
                         <p><a class="button" href="https://pocketmadori.herokuapp.com/" target="_blank">使ってみる</a></p>
                     </div>
@@ -175,33 +202,35 @@
 
         <!-- 発表会動画 -->
         <div class="movie">
-            <h2>サービス紹介</h2>
+            <a id="movie_anchor" class="anchor"></a>
+            <h2>Movie</h2>
             <p>卒業制作発表会@YouTube</p>
-            
+
+            <p>1期プログラミングスクールオンラインコース卒業制作発表会 昼コース</p>
             <div class="yt">
-                <p>1期プログラミングスクールオンラインコース卒業制作発表会　昼コース</p>
-                <iframe width="480" height="270" src="https://www.youtube.com/embed/u6KWwfBUttA" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <div class="yt">
-                <p>1期プログラミングスクールオンラインコース卒業制作発表会　夜コース_1</p>
-                <iframe width="480" height="270" src="https://www.youtube.com/embed/wcqNYELllE4" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/u6KWwfBUttA" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
+            <p>1期プログラミングスクールオンラインコース卒業制作発表会 夜コース_1</p>
             <div class="yt">
-                <p>1期プログラミングスクールオンラインコース卒業制作発表会　夜コース_2</p>
-                <iframe width="480" height="270" src="https://www.youtube.com/embed/Nz951zxnn3Q"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/wcqNYELllE4" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <p>1期プログラミングスクールオンラインコース卒業制作発表会 夜コース_2</p>
+            <div class="yt">
+                <iframe src="https://www.youtube.com/embed/Nz951zxnn3Q" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
-        
+
 
         <!-- 参加方法 -->
         <!-- （名前、登録方法とか追加方法とかのほうがいのかな…？） -->
         <div class="howtoadd">
+            <a id="howtoadd_anchor" class="anchor"></a>
             <div>
                 <h2>参加・登録方法</h2>
                 <h4>全ての皆様へ</h4>
@@ -226,7 +255,7 @@
                     <h4>1. おんらいん1st Git</h4>
                     <p><a class="button" href="https://github.com/suminabe/online1st" target="_blank">見てみる</a></p>
                     <img src="./img/github.jpg" alt="GitHub" height="150px">
-                </div>  
+                </div>
 
                 <div>
                     <h4>2. みんなの卒箱</h4>
@@ -240,13 +269,15 @@
 
         <!-- リンク集 -->
         <div class="link">
+            <a id="link_anchor" class="anchor"></a>
             <h2>Link</h2>
-        
+
             <ul>
                 <li><a href="https://sunabaco.com/" target="_blank">SUNABACO</a></li>
                 <li><a href="https://prog-8.com/" target="_blank">progate</a></li>
                 <li><a href="https://jp.heroku.com/" target="_blank">Heroku</a></li>
-                <li><a href="https://qiita.com/sota_mikami/items/c6038cf13fd84b519a61" target="_blank">GitHubでWebページ公開</a></li>
+                <li><a href="https://qiita.com/sota_mikami/items/c6038cf13fd84b519a61"
+                        target="_blank">GitHubでWebページ公開</a></li>
 
             </ul>
 
@@ -255,18 +286,19 @@
     </div>
 
 
-<footer>
-    <h1>
-        <a href="#">TOPへ</a>
-    </h1>
+    <footer>
+        <h1>
+            <a href="#">TOPへ</a>
+        </h1>
 
 
-</footer>
+    </footer>
 
-<!-- ｊQuery -->
-<script src=”script.js”></script>
+    <!-- ｊQuery -->
+    <script src=”script.js”></script>
 
 </body>
+
 </html>
 
 <!-- 
