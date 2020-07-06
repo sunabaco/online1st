@@ -309,6 +309,11 @@ h2 {
     object-fit: contain;
 }
 
+.object-fit-img {
+    object-fit: contain;
+    font-family: 'object-fit: contain;'
+}
+
 .item a {
     color: #fff;
     font-weight: 500;
