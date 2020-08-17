@@ -1,5 +1,5 @@
 # おんらいん1st卒業制作まとめサイト
-このページはおんらいん1st卒業生である[すみなべ](https://twitter.com/suminabee)さんが主導で開発されている[SUNABACOオンラインプログラミングスクール](https://sunabaco.com/schools/online/)の卒業制作のまとめサイトです。
+SUNABACOのプログラミングスクール卒業生の有志のみなさんによって作成されている、卒業制作のまとめサイトです。
 
 ## 概要
 このWebサイトはプログラミングスクール卒業生にかぎらず、あらゆる方の積極的な貢献を歓迎します。
@@ -31,3 +31,11 @@ The source code is licensed MIT.
 [初心者がGitを使った複数人での開発をする時の流れ](https://qiita.com/risagon/items/0cd3592b08ee058ffb80)
 
 [Github で Fork して PullRequest を送るのはこんなに簡単](https://qiita.com/YumaInaura/items/acff806290c8953d3185)
+
+## Contributers
+<a href="https://github.com/sunabaco/online1st/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=sunabaco/online1st" />
+</a>
+
+Made with [contributors-img](https://contributors-img.web.app).
+
